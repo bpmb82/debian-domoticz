@@ -7,7 +7,7 @@ To do's:
 
 * Add user support (currently running as root) while being able to deal with User Namespaces setting in Docker
 
-# Installation
+# Build from source
 
 Clone the repository into a directory of your choosing:
 
@@ -20,9 +20,12 @@ Then, build the image with Docker:
 This will tag the image as 'debian-domoticz:1.0'. You can choose another name if you wish.
 Note down the id of the image once built, we need it in the next step.
 
-Next, we run the image:
+# Run
 
 `docker container run -p 8080:8080 <id of image>`
+or
+`docker pull bpmbee/debian-domoticz`
+`docker run -p 8080:8080 bpmbee/debian-domoticz`
 
 You should now be able to login.
 
