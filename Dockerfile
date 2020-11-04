@@ -4,7 +4,8 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG DEFAULT_WWW=8080
 ARG DEFAULT_SSLWWW=0
-ARG DOMOTICZ_VERSION="master" # Change to "development" if you want the development version
+# Change to "development" if you want the development version
+ARG DOMOTICZ_VERSION="master"
 
 LABEL maintainer                      "BPMb"
 LABEL org.label-schema.build-date     $BUILD_DATE
