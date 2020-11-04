@@ -26,6 +26,9 @@ Next, we run the image:
 
 You should now be able to login.
 
+**NOTE**
+If your docker container shows to be 'unhealthy', please add 127.0.0.* to the local networks in Domoticz -> Settings
+
 # docker-compose
 
 You can also use this docker-compose.yml:
