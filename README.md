@@ -60,4 +60,4 @@ services:
       - 8118:8080 # for local access, remove if not needed
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0 # for RFXCom or ZWave dongles, remove if not needed
-    restart: unless-stopped```
+    restart: unless-stopped
