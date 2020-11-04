@@ -5,8 +5,7 @@ This docker image is based on Debian (buster-slim) and incorporates the toonapil
 
 To do's:
 
-* Add user support (currently running as root)
-* Be able to deal with User Namespaces setting in Docker
+* Add user support (currently running as root) while being able to deal with User Namespaces setting in Docker
 
 # installation
 
