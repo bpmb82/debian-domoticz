@@ -43,7 +43,6 @@ services:
     labels:
       - "com.centurylinklabs.watchtower.enable=true" # optional when using Watchtower
     container_name: domoticz
-    userns_mode: "host" #optional but recommended
     security_opt:
       - "no-new-privileges:true" # optional but recommended
     environment:
