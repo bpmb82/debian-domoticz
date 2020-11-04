@@ -22,13 +22,16 @@ RUN \
     apt-get update && apt-get install -y \
         curl procps wget \
         build-essential git libcereal-dev \
-        libboost-thread-dev libboost-system-dev libcoap-1-0-dev libcurl4-gnutls-dev libssl-dev liblua5.3-dev uthash-dev libudev-dev libusb-dev zlib1g-dev \
+        libboost-thread-dev libboost-system-dev \
+        libcoap-1-0-dev libcurl4-gnutls-dev \
+        libssl-dev liblua5.3-dev uthash-dev \
+        libudev-dev libusb-dev zlib1g-dev \
         python3 python3-dev python3-pip libpython3.7 && \
     # CMake 3.16.0 or higher is required
     echo 'deb http://deb.debian.org/debian buster-backports main' > /etc/apt/sources.list.d/backport.list && \
     apt-get update && apt-get install -y -t buster-backports cmake && \
     mkdir -p /opt && \
-    # Toonapilib
+    # Install toonapilib
     pip3 install toonapilib && \
     # OpenZWave
     cd /opt && \
