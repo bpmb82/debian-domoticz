@@ -7,7 +7,7 @@ To do's:
 
 * Add user support (currently running as root) while being able to deal with User Namespaces setting in Docker
 
-# installation
+# Installation
 
 Clone the repository into a directory of your choosing:
 
@@ -29,11 +29,12 @@ You should now be able to login.
 **NOTE**
 If your docker container shows to be 'unhealthy', please add 127.0.0.* to the local networks in Domoticz -> Settings
 
-# docker-compose
+# Docker-compose
 
 You can also use this docker-compose.yml:
 
-```version: '3.3'
+```
+version: '3.3'
 
 services:
 
