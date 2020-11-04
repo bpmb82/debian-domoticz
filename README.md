@@ -23,8 +23,11 @@ Note down the id of the image once built, we need it in the next step.
 # Run
 
 `docker container run -p 8080:8080 <id of image>`
+
 or
+
 `docker pull bpmbee/debian-domoticz`
+
 `docker run -p 8080:8080 bpmbee/debian-domoticz`
 
 You should now be able to login.
