@@ -4,8 +4,8 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG DEFAULT_WWW=8080
 ARG DEFAULT_SSLWWW=0
-# Change to "development" if you want the development version
-ARG DOMOTICZ_VERSION="master"
+# Change to "master" if you want the stable version
+ARG DOMOTICZ_VERSION="development"
 
 LABEL maintainer                      "BPMb"
 LABEL org.label-schema.build-date     $BUILD_DATE
@@ -58,7 +58,7 @@ RUN \
     git clone https://github.com/JohnvandeVrugt/toonapilib4domoticz.git toonapilib4domoticz && \
     chmod -R ug+rw /opt/domoticz/plugins && \
     # Clean
-    apt-get remove --purge -y build-essential git wget && \
+    apt-get remove --purge -y build-essential git wget cmake && \
     apt-get autoremove -y && apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     echo DONE
