@@ -58,7 +58,7 @@ RUN \
     git clone https://github.com/JohnvandeVrugt/toonapilib4domoticz.git toonapilib4domoticz && \
     chmod -R ug+rw /opt/domoticz/plugins && \
     # Clean
-    apt-get remove --purge -y build-essential git wget && \
+    apt-get remove --purge -y build-essential git wget cmake && \
     apt-get autoremove -y && apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     echo DONE
