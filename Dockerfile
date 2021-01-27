@@ -71,7 +71,7 @@ RUN chmod +x *.sh
 EXPOSE  6144 ${WWW}
 VOLUME  ["/data", "/opt/domoticz/backups", "/opt/domoticz/plugins", "/opt/domoticz/scripts"]
 
-HEALTHCHECK --interval=5m --timeout=5s \
+HEALTHCHECK --interval=90s --timeout=10s \
   CMD /opt/domoticz/healthcheck.sh
 
 ENTRYPOINT ["/opt/domoticz/start.sh"]
